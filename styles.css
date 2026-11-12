@@ -398,7 +398,9 @@ details[open] .faq-icon::after{transform:rotate(0)}
 .footer-cols a{width:fit-content;transition:color .15s}
 .footer-bottom{margin-top:64px;padding-top:20px;border-top:1px solid var(--line-soft)}
 .footer-legal{font-size:13px;color:var(--faint)}
-.footer-giant{margin:28px 0 -.15em;text-align:center;font-size:23.5vw;line-height:.82;font-weight:700;letter-spacing:-.065em;white-space:nowrap;color:transparent;background:linear-gradient(rgb(70 25 100/.28),rgb(70 25 100/.28)),#b98fd6 url(assets/how-bg.jpg) center 40%/cover no-repeat;-webkit-background-clip:text;background-clip:text;user-select:none;padding-right:.06em}
+.footer-giant{margin:28px 0 -.046em;text-align:center;font-size:23.5vw;line-height:.82;font-weight:700;letter-spacing:-.065em;white-space:nowrap;color:transparent;background:linear-gradient(rgb(70 25 100/.28),rgb(70 25 100/.28)),#b98fd6 url(assets/how-bg.jpg) center 40%/cover no-repeat;-webkit-background-clip:text;background-clip:text;user-select:none;padding-right:.06em}
+/* Sit the word exactly on the page edge: letters whole, only the tail of the y drops off. text-box trims the box to cap height and baseline; the -.046em fallback approximates it for Inter at this line height. */
+@supports (text-box: trim-both cap alphabetic){.footer-giant{text-box:trim-both cap alphabetic;line-height:1;padding-top:.1em;margin-bottom:0}}
 @media (hover:hover) and (pointer:fine){.footer-cols a:hover{color:var(--ink)}}
 @media (pointer:coarse),(max-width:640px){.footer-cols>div{gap:0}.footer-h{margin-bottom:6px}.footer-cols a{display:flex;align-items:center;min-height:44px;width:100%}}
 @media (max-width:640px){.mobile-nav{padding-inline:16px}.footer{padding-top:56px}.footer-top{flex-direction:column;gap:36px}.footer-cols{gap:56px}.footer-bottom{margin-top:48px}.footer-giant{margin-top:20px}}
