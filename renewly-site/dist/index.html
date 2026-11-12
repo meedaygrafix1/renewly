@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfbfa">
+  <meta name="description" content="Renewly keeps every subscription in one place, reminds you before anything renews, and shows where your money goes.">
+  <title>Renewly — Every subscription, in one place</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Renewly — Every subscription, in one place">
+  <meta property="og:description" content="Track what you pay for, get reminded before anything renews, and see where your money goes.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="#top" aria-label="Renewly home">Renewly</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-dark btn-sm nav-cta" href="#features" data-cta>Explore Renewly</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary mobile-cta" href="#features" data-cta>Explore Renewly</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-copy">
+        <h1 id="hero-title" class="hero-title reveal">Every <span class="hchip hchip-app" aria-hidden="true"><span class="hchip-in"><span class="hchip-win"><span class="hroll" data-roll>
+            <span class="app-face" style="--bg:#fff;--c:#e50914;--icon:url(assets/brands/netflix.svg)"></span>
+            <span class="app-face" style="--bg:#1ed760;--c:#121212;--icon:url(assets/brands/spotify.svg)"></span>
+            <span class="app-face" style="--bg:#ffe9ec;--c:#ff0033;--icon:url(assets/brands/youtube.svg)"></span>
+            <span class="app-face" style="--bg:#3693f3;--c:#fff;--icon:url(assets/brands/icloud.svg)"></span>
+            <span class="app-face" style="--bg:#fff;--c:#e50914;--icon:url(assets/brands/netflix.svg)"></span>
+          </span></span></span></span> subscription.<br>One <span class="hchip hchip-date" aria-hidden="true"><span class="hchip-in"><span class="cal"><span class="cal-m">Nov</span><span class="cal-d"><span class="hroll" data-roll><span>13</span><span>15</span><span>18</span><span>21</span><span>13</span></span></span></span><span class="hchip-label"><span class="hroll" data-roll><span>Fri</span><span>Sun</span><span>Wed</span><span>Sat</span><span>Fri</span></span></span></span></span> clear view. <span class="hchip hchip-card" aria-hidden="true"><span class="hchip-in"><span class="card-in"><span class="hroll" data-roll>
+            <span class="card-face"><span class="card-top"><b>Netflix</b><em>₦4,800</em></span><span class="card-pill is-soon"><i></i>Renews tomorrow</span></span>
+            <span class="card-face"><span class="card-top"><b>Spotify</b><em>₦1,300</em></span><span class="card-pill"><i></i>In 3 days</span></span>
+            <span class="card-face"><span class="card-top"><b>YouTube</b><em>₦1,100</em></span><span class="card-pill"><i></i>In 6 days</span></span>
+            <span class="card-face"><span class="card-top"><b>iCloud+</b><em>₦600</em></span><span class="card-pill"><i></i>In 9 days</span></span>
+            <span class="card-face"><span class="card-top"><b>Netflix</b><em>₦4,800</em></span><span class="card-pill is-soon"><i></i>Renews tomorrow</span></span>
+          </span></span></span></span></h1>
+        <p class="lede reveal">Renewly keeps track of what you pay for, reminds you before anything renews, and shows where your money actually goes.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#features" data-cta>Explore Renewly</a>
+          <a class="btn btn-ghost" href="#how-it-works">How it works <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <div class="flow" aria-hidden="true">
+        <svg class="flow-lines"><path class="flow-path" data-side="l"/><path class="flow-path" data-side="r"/></svg>
+        <div class="flow-tiles">
+          <span class="flow-tile" data-side="l" style="--k:0;--c:#e50914;--icon:url(assets/brands/netflix.svg)"></span>
+          <span class="flow-tile" data-side="l" style="--k:1;--c:#ff0000;--icon:url(assets/brands/youtube.svg)"></span>
+          <span class="flow-tile" data-side="l" style="--k:2;--c:#fa243c;--icon:url(assets/brands/applemusic.svg)"></span>
+          <span class="flow-tile" data-side="l" style="--k:3;--c:#f24e1e;--icon:url(assets/brands/figma.svg)"></span>
+          <span class="flow-tile" data-side="r" style="--k:0;--c:#1db954;--icon:url(assets/brands/spotify.svg)"></span>
+          <span class="flow-tile" data-side="r" style="--k:1;--c:#3693f3;--icon:url(assets/brands/icloud.svg)"></span>
+          <span class="flow-tile" data-side="r" style="--k:2;--c:#000000;--icon:url(assets/brands/notion.svg)"></span>
+          <span class="flow-tile" data-side="r" style="--k:3;--c:#0061ff;--icon:url(assets/brands/dropbox.svg)"></span>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-label="Renewly home screen showing monthly spend and upcoming renewals" role="img">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="status"><span>9:41</span><span class="island"></span><span class="status-icons"><img src="assets/signal.svg" alt=""><img src="assets/wifi.svg" alt=""><img src="assets/battery.svg" alt=""></span></div>
+            <div class="app">
+              <div class="app-top">
+                <div><p class="app-hello">Good morning</p><p class="app-title">Subscriptions</p></div>
+                <span class="app-icon-btn"><svg class="i"><use href="#i-bell"/></svg></span>
+              </div>
+              <div class="spend">
+                <p class="spend-label">Spent this month</p>
+                <p class="spend-value"><span class="cur">₦</span>18,450</p>
+                <p class="spend-meta">8 active subscriptions</p>
+              </div>
+              <p class="app-section">Next up</p>
+              <div class="app-row app-row-feature">
+                <span class="logo" style="--icon:url(assets/brands/netflix.svg);--c:#e50914"></span>
+                <div class="row-main"><b>Netflix</b><small class="accent-text">Renews tomorrow</small></div>
+                <div class="row-end"><b>₦4,800</b><small>Monthly</small></div>
+              </div>
+              <p class="app-section">All subscriptions</p>
+              <div class="app-list">
+                <div class="app-row"><span class="logo" style="--icon:url(assets/brands/spotify.svg);--c:#1db954"></span><div class="row-main"><b>Spotify</b><small>15 Nov</small></div><div class="row-end"><b>₦1,300</b><small>Monthly</small></div></div>
+                <div class="app-row"><span class="logo" style="--icon:url(assets/brands/youtube.svg);--c:#ff0033"></span><div class="row-main"><b>YouTube Premium</b><small>18 Nov</small></div><div class="row-end"><b>₦1,100</b><small>Monthly</small></div></div>
+                <div class="app-row"><span class="logo" style="--icon:url(assets/brands/icloud.svg);--c:#3693f3"></span><div class="row-main"><b>iCloud+</b><small>21 Nov</small></div><div class="row-end"><b>₦600</b><small>Monthly</small></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Features</p>
+          <h2 id="features-title">Everything that renews,<br>under control.</h2>
+          <p class="section-lede">One place for every recurring payment, with the dates, reminders and numbers that keep you ahead of them.</p>
+        </div>
+
+        <div class="bento">
+          <article class="tile tile-wide reveal">
+            <div class="tile-visual visual-list photo-blocks lazy-bg">
+              <div class="panel">
+                <div class="panel-head"><span class="panel-title">Subscriptions</span><span class="panel-meta">8 active</span><span class="btn-mini"><svg class="i"><use href="#i-plus"/></svg>Add</span></div>
+                <div class="table-row table-head"><span>Name</span><span>Cycle</span><span>Next billing</span><span>Amount</span></div>
+                <div class="table-row"><span class="cell-name"><span class="logo logo-sm" style="--icon:url(assets/brands/netflix.svg);--c:#e50914"></span>Netflix</span><span>Monthly</span><span class="accent-text">Tomorrow</span><span>₦4,800</span></div>
+                <div class="table-row"><span class="cell-name"><span class="logo logo-sm" style="--icon:url(assets/brands/spotify.svg);--c:#1db954"></span>Spotify</span><span>Monthly</span><span>15 Nov</span><span>₦1,300</span></div>
+                <div class="table-row"><span class="cell-name"><span class="logo logo-sm" style="--icon:url(assets/brands/icloud.svg);--c:#3693f3"></span>iCloud+</span><span>Monthly</span><span>21 Nov</span><span>₦600</span></div>
+                <div class="table-row"><span class="cell-name"><span class="logo logo-sm" style="--icon:url(assets/brands/duolingo.svg);--c:#58cc02"></span>Duolingo</span><span>Yearly</span><span>4 Feb</span><span>₦23,900</span></div>
+                <div class="table-row"><span class="cell-name"><span class="logo logo-sm" style="--icon:url(assets/brands/dropbox.svg);--c:#0061ff"></span>Dropbox</span><span>Monthly</span><span>2 Dec</span><span>₦3,200</span></div>
+              </div>
+            </div>
+            <div class="tile-copy"><h3>All in one list.</h3><p>Name, amount, category and billing cycle for every recurring payment, finally side by side.</p></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-visual visual-notifs">
+              <div class="notif notif-back"><span class="logo logo-notif" style="--icon:url(assets/brands/spotify.svg);--c:#1db954"></span><div><p class="notif-app">Renewly <span>2d</span></p><p class="notif-title">Spotify renews in 3 days</p></div></div>
+              <div class="notif"><span class="logo logo-notif" style="--icon:url(assets/brands/netflix.svg);--c:#e50914"></span><div><p class="notif-app">Renewly <span>now</span></p><p class="notif-title">Netflix renews tomorrow</p><p class="notif-body">₦4,800 on 13 Nov</p></div></div>
+            </div>
+            <div class="tile-copy"><h3>Reminders before you pay.</h3><p>Choose when to hear about a renewal, so nothing charges you by surprise.</p></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-visual visual-split">
+              <div class="split-total"><span>Monthly spend</span><b data-count="18450">₦18,450</b></div>
+              <div class="split-bar" aria-hidden="true"><i style="--w:52%"></i><i style="--w:30%"></i><i style="--w:18%"></i></div>
+              <ul class="split-legend">
+                <li><i></i>Entertainment<b>52%</b></li>
+                <li><i></i>Productivity<b>30%</b></li>
+                <li><i></i>Storage<b>18%</b></li>
+              </ul>
+            </div>
+            <div class="tile-copy"><h3>See where it goes.</h3><p>Spending grouped by category, so the big picture takes one glance.</p></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-visual visual-form photo-spiral lazy-bg">
+              <div class="segmented" aria-hidden="true"><i class="seg-thumb"></i><span>Weekly</span><span class="is-on">Monthly</span><span>Yearly</span></div>
+              <div class="field"><span>Next billing</span><b><svg class="i"><use href="#i-calendar"/></svg>13 Nov 2026</b></div>
+              <div class="field"><span>Remind me</span><b>1 day before</b></div>
+            </div>
+            <div class="tile-copy"><h3>Any billing cycle.</h3><p>Weekly, monthly or yearly. Renewly works out what’s next.</p></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-visual visual-backup">
+              <div class="file-row">
+                <span class="file-icon"><svg class="i"><use href="#i-file"/></svg></span>
+                <div><b>renewly-backup.json</b><small>8 subscriptions</small></div>
+                <span class="btn-mini btn-mini-dark btn-export"><span class="exp-a"><svg class="i"><use href="#i-download"/></svg>Export</span><span class="exp-b"><svg class="i"><use href="#i-check"/></svg>Saved</span></span>
+              </div>
+              <p class="file-note"><svg class="i"><use href="#i-check"/></svg>Restore anytime from a backup file</p>
+            </div>
+            <div class="tile-copy"><h3>Yours to keep.</h3><p>Export your records as a backup and restore them whenever you need.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="how-it-works" aria-labelledby="how-title">
+      <div class="wrap how">
+        <div class="how-left">
+          <div class="section-head reveal">
+            <p class="kicker">How it works</p>
+            <h2 id="how-title">Set up in minutes.<br>Calm for months.</h2>
+          </div>
+          <div class="how-steps reveal" role="tablist" aria-label="How Renewly works" aria-orientation="vertical">
+            <button class="how-step" role="tab" id="how-tab-0" aria-selected="true" aria-controls="how-panel" data-step="0">
+              <span class="step-num">01</span>
+              <span class="how-step-text"><b>Add a subscription</b><span class="how-step-desc"><span>Enter the name, amount and billing cycle. Pick a category if you like.</span></span></span>
+              <i class="how-progress" aria-hidden="true"><span></span></i>
+            </button>
+            <button class="how-step" role="tab" id="how-tab-1" aria-selected="false" aria-controls="how-panel" data-step="1" tabindex="-1">
+              <span class="step-num">02</span>
+              <span class="how-step-text"><b>Set a reminder</b><span class="how-step-desc"><span>Add the next billing date and choose how far ahead you want a heads-up.</span></span></span>
+              <i class="how-progress" aria-hidden="true"><span></span></i>
+            </button>
+            <button class="how-step" role="tab" id="how-tab-2" aria-selected="false" aria-controls="how-panel" data-step="2" tabindex="-1">
+              <span class="step-num">03</span>
+              <span class="how-step-text"><b>Stay ahead</b><span class="how-step-desc"><span>See what’s renewing and your monthly total, and cancel what you no longer use.</span></span></span>
+              <i class="how-progress" aria-hidden="true"><span></span></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="how-visual lazy-bg reveal" id="how-panel" role="tabpanel" aria-labelledby="how-tab-0">
+          <p class="sr-only" id="how-caption">The new subscription form, filled in for Netflix at ₦4,800 a month.</p>
+          <div class="phone phone-how" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="status"><span>9:41</span><span class="island"></span><span class="status-icons"><img src="assets/signal.svg" alt=""><img src="assets/wifi.svg" alt=""><img src="assets/battery.svg" alt=""></span></div>
+
+              <div class="screen is-active" data-screen="0">
+                <div class="ios-bar"><span>Cancel</span><b>New subscription</b><span class="accent-text">Save</span></div>
+                <div class="new-brand"><span class="logo logo-lg" style="--icon:url(assets/brands/netflix.svg);--c:#e50914"></span><b>Netflix</b><small>Entertainment</small></div>
+                <div class="form-card">
+                  <div class="form-row"><span>Name</span><b>Netflix<i class="caret"></i></b></div>
+                  <div class="form-row"><span>Amount</span><b>₦4,800</b></div>
+                  <div class="form-row"><span>Billing cycle</span><b>Monthly</b></div>
+                  <div class="form-row"><span>Category</span><b>Entertainment</b></div>
+                </div>
+                <span class="app-primary">Add subscription</span>
+              </div>
+
+              <div class="screen" data-screen="1">
+                <div class="ios-bar"><span>Back</span><b>Reminder</b><span class="accent-text">Done</span></div>
+                <div class="form-card">
+                  <div class="form-row"><span>Next billing</span><b>13 Nov 2026</b></div>
+                </div>
+                <p class="form-label">Remind me</p>
+                <div class="form-card">
+                  <div class="form-row opt"><b>On the day</b></div>
+                  <div class="form-row opt is-picked"><b>1 day before</b><svg class="i"><use href="#i-check"/></svg></div>
+                  <div class="form-row opt"><b>3 days before</b></div>
+                  <div class="form-row opt"><b>1 week before</b></div>
+                </div>
+                <p class="form-hint"><svg class="i"><use href="#i-bell"/></svg>You’ll get a heads-up on 12 Nov.</p>
+              </div>
+
+              <div class="screen" data-screen="2">
+                <div class="app">
+                  <div class="app-top">
+                    <div><p class="app-hello">Good morning</p><p class="app-title">Subscriptions</p></div>
+                    <span class="app-icon-btn"><svg class="i"><use href="#i-bell"/></svg></span>
+                  </div>
+                  <div class="spend">
+                    <p class="spend-label">Spent this month</p>
+                    <p class="spend-value"><span class="cur">₦</span>18,450</p>
+                    <p class="spend-meta">8 active subscriptions</p>
+                  </div>
+                  <p class="app-section">Next up</p>
+                  <div class="app-row app-row-feature">
+                    <span class="logo" style="--icon:url(assets/brands/netflix.svg);--c:#e50914"></span>
+                    <div class="row-main"><b>Netflix</b><small class="accent-text">Renews tomorrow</small></div>
+                    <div class="row-end"><b>₦4,800</b><small>Monthly</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq">
+        <div class="reveal">
+          <p class="kicker">FAQ</p>
+          <h2 id="faq-title">Questions,<br>answered.</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>What is Renewly?<span class="faq-icon" aria-hidden="true"></span></summary><p>Renewly is a subscription tracker. It brings your recurring payments, renewal reminders and spending insights into one place.</p></details>
+          <details><summary>What can I track?<span class="faq-icon" aria-hidden="true"></span></summary><p>Any recurring payment: streaming services, music, cloud storage, software and more. For each one, record its name, category, amount, billing cycle and next billing date.</p></details>
+          <details><summary>Can I choose when I’m reminded?<span class="faq-icon" aria-hidden="true"></span></summary><p>Yes. Every subscription has its own reminder setting, so you decide how far ahead of the billing date you hear about it.</p></details>
+          <details><summary>Can I back up my subscriptions?<span class="faq-icon" aria-hidden="true"></span></summary><p>Yes. Export your records to a Renewly JSON backup and import it again whenever you need to restore them.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap cta-wrap" aria-labelledby="cta-title">
+      <div class="cta cta-photo lazy-bg reveal">
+        <h2 id="cta-title">Know what renews next.</h2>
+        <p>Every subscription, every date, every naira. In one place.</p>
+        <a class="btn btn-primary" href="#features" data-cta>Explore Renewly</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-top">
+      <div class="footer-brand">
+        <a class="wordmark" href="#top">Renewly</a>
+        <p>Every subscription, one clear view.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Footer navigation">
+        <div><p class="footer-h">Product</p><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a></div>
+        <div><p class="footer-h">Get started</p><a href="#features" data-cta>Explore Renewly</a><a href="#top">Back to top</a></div>
+      </nav>
+    </div>
+    <div class="wrap footer-bottom"><p class="footer-legal">© <span id="year">2026</span> Renewly</p></div>
+    <div class="footer-giant lazy-bg" aria-hidden="true">Renewly</div>
+  </footer>
+</body>
+</html>
